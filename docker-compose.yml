@@ -38,10 +38,5 @@ services:
       OAUTH2_PROXY_SET_XAUTHREQUEST: "true"
       OAUTH2_PROXY_PASS_USER_HEADERS: "true"
 
-    networks:
-      - proxy
-
-networks:
-  proxy:
-    external: true
-    name: traefik_proxy
+    ports:
+      - "127.0.0.1:4180:4180"
