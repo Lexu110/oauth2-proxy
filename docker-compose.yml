@@ -38,5 +38,7 @@ services:
       OAUTH2_PROXY_SET_XAUTHREQUEST: "true"
       OAUTH2_PROXY_PASS_USER_HEADERS: "true"
 
+      OAUTH2_PROXY_TRUSTED_PROXY_IPS: "127.0.0.1/32,::1/128"
+
     ports:
       - "127.0.0.1:4180:4180"
